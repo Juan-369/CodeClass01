@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-// Define quais informações o componente receberá.
+
 type ProductCardProps = {
   nome: string;
 };
@@ -8,8 +8,7 @@ type ProductCardProps = {
 export default function ProductCard({ nome }: ProductCardProps) {
   return (
     <View style={styles.card}>
-      {/* O nome não é fixo.
-          Ele chega através das Props. */}
+
       <Text style={styles.nome}>{nome}</Text>
     </View>
   );
