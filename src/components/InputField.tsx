@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet, TextInputProps } from 'react-native';
 
-// Interface para definir os tipos aceites no TypeScript
+
 interface InputFieldProps extends TextInputProps {
   label: string;
   value: string;
@@ -24,8 +24,8 @@ export default function InputField({
       <TextInput
         style={[
           styles.input,
-          props.multiline ? styles.inputMultiline : null, // campo de descrição fica mais alto
-          error ? styles.inputError : null,               // borda vermelha quando há erro
+          props.multiline ? styles.inputMultiline : null, 
+          error ? styles.inputError : null,               
         ]}
         value={value}
         onChangeText={onChangeText}

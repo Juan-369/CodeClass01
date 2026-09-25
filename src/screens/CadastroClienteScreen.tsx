@@ -3,7 +3,7 @@ import { View, StyleSheet, Button, ScrollView } from 'react-native';
 import InputField from '../components/InputField';
 
 export default function CadastroClienteScreen() {
-  // Valores digitados
+
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [endereco, setEndereco] = useState('');
@@ -12,7 +12,7 @@ export default function CadastroClienteScreen() {
   const [bairro, setBairro] = useState('');
   const [estado, setEstado] = useState('');
 
-  // Mensagens de erro
+
   const [erroNome, setErroNome] = useState('');
   const [erroEmail, setErroEmail] = useState('');
   const [erroEndereco, setErroEndereco] = useState('');
@@ -73,8 +73,8 @@ export default function CadastroClienteScreen() {
     !erroCidade && !erroBairro && !erroEstado;
 
   return (
-    // keyboardShouldPersistTaps: o primeiro toque no botão funciona
-    // mesmo com o teclado aberto.
+
+
     <ScrollView style={styles.container} keyboardShouldPersistTaps="handled">
       <InputField
         label="Nome *"

@@ -1,20 +1,20 @@
 import { Text, View } from 'react-native';
 let nome = 'Isa';
-//funçoes
+
 function gerarBoasVindas(nome) { 
   return "Bem-vindo, " + nome; 
 }
-//Arrow functions
+
 const somar = (a, b) => {
   return a + b;
 };
 
 
-//Arrays
+
 const tecnologias = [
   "JavaScript", "React Native", "Expo"
 ];
-//Array de Objetos
+
 const modulos = [
   {
     id: 1,
@@ -37,7 +37,7 @@ const modulos = [
 ];
 
 
-//Objetos
+
 const aluno = { 
   nome: "João", 
   idade: 16, 
@@ -52,16 +52,16 @@ const alunos = [
   { nome: "Pedro", nota: 4 }
 ];
 
-//map
+
 const resultado = alunos.map((aluno) => {
   return aluno.nome;
 });
 
-//filter
+
 const alunosAprovados = alunos.filter((aluno) => {
   return aluno.nota >= 6;
 });
-//find
+
 const produtos = [
   { id: 1, nome: "Mouse", preco: 35 },
   { id: 2, nome: "Teclado", preco: 80 },
@@ -72,7 +72,7 @@ const produtoEncontrado = produtos.find((produto) => {
   return produto.id === 2;
 });
 
-//Template string
+
 const nome1 = "Isa";
 const curso = "React Native";
 

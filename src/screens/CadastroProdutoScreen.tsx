@@ -3,14 +3,14 @@ import { View, StyleSheet, Button, ScrollView } from 'react-native';
 import InputField from '../components/InputField';
 
 export default function CadastroProdutoScreen() {
-  // Valores digitados
+
   const [nome, setNome] = useState('');
   const [descricao, setDescricao] = useState('');
   const [categoria, setCategoria] = useState('');
   const [preco, setPreco] = useState('');
   const [quantidade, setQuantidade] = useState('');
 
-  // Mensagens de erro
+ 
   const [erroNome, setErroNome] = useState('');
   const [erroDescricao, setErroDescricao] = useState('');
   const [erroCategoria, setErroCategoria] = useState('');
@@ -32,7 +32,7 @@ export default function CadastroProdutoScreen() {
     setErroCategoria(val.trim() ? '' : 'Categoria é obrigatória');
   };
 
-  // Aceita "150.00" ou "150,00"
+
   const paraNumero = (val: string) => Number(val.replace(',', '.'));
 
   const validarPreco = (val: string) => {

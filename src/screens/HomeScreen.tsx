@@ -2,8 +2,6 @@ import { Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 
 export default function HomeScreen({ navigation }: any) {
   return (
-    // ScrollView permite rolar a tela
-    // caso existam muitos botões.
     <ScrollView style={styles.container}>
       <Text style={styles.titulo}>
         CodeClass
@@ -13,7 +11,7 @@ export default function HomeScreen({ navigation }: any) {
         Escolha uma area
       </Text>
 
-      {/* ---------- Botões que já existiam ---------- */}
+     
       <TouchableOpacity
         style={styles.botao}
         onPress={() => navigation.navigate('ComponentesBasicos')}
@@ -32,7 +30,7 @@ export default function HomeScreen({ navigation }: any) {
         </Text>
       </TouchableOpacity>
 
-      {/* ---------- Botões da Atividade 08 ---------- */}
+
       <TouchableOpacity
         style={styles.botao}
         onPress={() => navigation.navigate('LoginScreen')}
@@ -63,44 +61,44 @@ export default function HomeScreen({ navigation }: any) {
   );
 }
 
-// Cria os estilos utilizados nesta tela.
+
 const styles = StyleSheet.create({
   // Estilo geral da tela.
   container: {
-    flex: 1,                    // Faz a tela ocupar todo o espaço disponível.
-    backgroundColor: '#f1f5f9', // Define a cor do fundo.
-    padding: 20,                // Cria espaço interno nas bordas.
+    flex: 1,                    
+    backgroundColor: '#f1f5f9', 
+    padding: 20,                
   },
-  // Estilo do título "CodeClass".
+
   titulo: {
-    fontSize: 30,            // Tamanho da fonte.
-    fontWeight: 'bold',      // Deixa o texto em negrito.
-    color: '#1e3a8a',        // Define a cor do texto.
+    fontSize: 30,           
+    fontWeight: 'bold',     
+    color: '#1e3a8a',      
   },
-  // Estilo do texto "Escolha uma área".
+
   subtitulo: {
-    fontSize: 16,            // Tamanho da fonte.
-    color: '#64748b',        // Cor do texto.
-    marginBottom: 20,        // Espaço abaixo do texto.
+    fontSize: 16,            
+    color: '#64748b',       
+    marginBottom: 20,        
   },
-  // Estilo usado nos botões normais.
+  
   botao: {
-    backgroundColor: '#ffffff', // Fundo branco.
-    padding: 18,                // Espaço interno do botão.
-    borderRadius: 10,           // Arredonda as bordas.
-    marginBottom: 12,           // Espaço entre os botões.
+    backgroundColor: '#ffffff',
+    padding: 18,                
+    borderRadius: 10,          
+    marginBottom: 12,          
   },
-  // Estilo especial do botão "Gerenciador de Produtos".
+  
   botaoDestaque: {
-    backgroundColor: '#4338ca', // Fundo roxo.
-    padding: 18,                // Espaço interno.
-    borderRadius: 10,           // Bordas arredondadas.
-    marginTop: 8,               // Espaço acima do botão.
-    marginBottom: 12,           // Espaço entre os botões.
+    backgroundColor: '#4338ca', 
+    padding: 18,                
+    borderRadius: 10,           
+    marginTop: 8,               
+    marginBottom: 12,           
   },
-  // Estilo do texto do botão em destaque.
+
   textoBranco: {
-    color: '#ffffff',        // Texto branco.
-    fontWeight: 'bold',      // Texto em negrito.
+    color: '#ffffff',     
+    fontWeight: 'bold',     
   },
 });
